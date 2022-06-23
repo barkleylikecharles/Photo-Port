@@ -103,11 +103,11 @@ const PhotoList = ({ category }) => {
     },
   ]);
 
-  const currentPhotos = photos.filter((photo) => photo.category === category);
+  const currentPhotos = photos.filter(photo => photo.category === category);
 
   const toggleModal = (image, i) => {
     setCurrentPhoto({...image, index: i});// current photo
-    setIsModalOpen(true);
+    setIsModalOpen(!isModalOpen);
   };
 
   return (

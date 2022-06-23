@@ -1,5 +1,5 @@
 import React from 'react';
-
+ 
 function Modal(currentPhoto) {
     const {name, category, description, index} = currentPhoto;
     return (
